@@ -3,6 +3,15 @@ import axios from "./axios";
 import requests from "./requests";
 import "./Banner.css";
 
+/*FUNCTION THAT TRUNCTATES A TRING */
+function truncateString(str, num) {
+  if (str.length > num) {
+    return str.slice(0, num) + "...";
+  } else {
+    return str;
+  }
+}
+
 const base_url = "https://image.tmdb.org/t/p/original";
 function Banner() {
   const [movie, setMovies] = useState([]);
@@ -31,13 +40,17 @@ function Banner() {
     >
       {" "}
       <div className="banner__contents">
-        <h1>{movie?.title || movie?.name || movie.original_name}</h1>
+        <h1 className="banner__title">
+          {movie?.title || movie?.name || movie?.original_name}
+        </h1>
         <div className="banner__buttons">
           <button className="banner__button">Play</button>
           <button className="banner__button">My List</button>
         </div>
 
-        {/*description */}
+        <h1 className="banner__description">
+          {truncateString(movie?.overview || " ", 150)}
+        </h1>
       </div>
     </header>
   );
