@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "./axios";
 import requests from "./requests";
+import "./Banner.css";
 
 const base_url = "https://image.tmdb.org/t/p/original";
 function Banner() {
@@ -30,9 +31,12 @@ function Banner() {
     >
       {" "}
       <div className="banner__contents">
-        {/*Title */}
-        <h1></h1>
-        {/*div >2 button */}
+        <h1>{movie?.title || movie?.name || movie.original_name}</h1>
+        <div className="banner__buttons">
+          <button className="banner__button">Play</button>
+          <button className="banner__button">My List</button>
+        </div>
+
         {/*description */}
       </div>
     </header>
