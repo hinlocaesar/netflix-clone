@@ -9,6 +9,7 @@ fetchComedyMovies:`/movie/top_rated?api_key=${API_KEY}&language=en-US`,
 fetchHorrorMovies:`/movie/top_rated?api_key=${API_KEY}&language=en-US`,
 fetchRomanceMovies:`/movie/top_rated?api_key=${API_KEY}&language=en-US`,
 fetchDocumentaries:`/movie/top_rated?api_key=${API_KEY}&language=en-US`,
+fetchJackReaper:`/search/movie?api_key=${API_KEY}&query=Jack+Reacher`,
 }
 
 export default requests;

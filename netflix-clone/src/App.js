@@ -1,11 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import Row from './Row';
+import requests from './requests';
 
 function App() {
   return (
     <div className="App">
-      <Row title="NETFLIX ORIGINALS"/>
-      <Row title="TRENDING NOW"/>
+      <h1>HI, Cesar</h1>
+
+      <Row title="TRENDING NOW" fetchUrl={requests.fetchJackReaper}/>
+      <Row title="DISCOVER ORIGINAL" fetchUrl={requests.fetchDiscoverNetflixOriginal}/>
+  
 
     </div>
   );
