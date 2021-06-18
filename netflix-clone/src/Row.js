@@ -22,8 +22,6 @@ function Row({ title, fetchUrl, isLargeRow }) {
       <h2>{title}</h2>
 
       <div className="row__posters">
-        {/*rowpowster*/}
-
         {movies.map((movie) => (
           <img
             key={movie.id}
