@@ -10,7 +10,7 @@
 }
 
 .nav__black {
-  backdrop-filter: #111;
+  background-color: #111;
 }
 
 .nav__logo {
