@@ -52,6 +52,7 @@ function Banner() {
           {truncateString(movie?.overview || " ", 150)}
         </h1>
       </div>
+      <div className="banner--footerBottom"></div>
     </header>
   );
 }
