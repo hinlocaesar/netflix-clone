@@ -12,7 +12,7 @@ function App() {
 
       <Row
         title="NETFLX ORIGINALS"
-        fetchUrl={requests.fetchDiscoverNetflixOriginal}
+        fetchUrl={requests.fetchNetflixOriginals}
         isLargeRow
       />
       <Row title="Trending Now" fetchUrl={requests.fetchTrending} />
@@ -22,10 +22,6 @@ function App() {
       <Row title="Horror" fetchUrl={requests.fetchHorrorMovies} />
       <Row title="Romance" fetchUrl={requests.fetchRomanceMovies} />
       <Row title="Documentaries" fetchUrl={requests.fetchDocumentaries} />
-      <Row
-        title="NETFLX ORIGINALS"
-        fetchUrl={requests.fetchDiscoverNetflixOriginal}
-      />
     </div>
   );
 }
